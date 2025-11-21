@@ -63,15 +63,14 @@ span{
 .container{
   width: 90%;
   margin: auto;
-  /* background-color: greenyellow; */
 }
 /* Navbar */
 .navbar {
-  /* position: sticky; */
+  position: relative;
   width: 90%;
   margin: auto;
   top: 10px;
-  z-index: 1;
+  z-index: 10;
   background-color: var(--pure-white);
   color: var(--deep-black);
   padding: 10px 20px;
@@ -79,18 +78,25 @@ span{
   justify-content: space-between;
   align-items: center;
   border-radius: 19px;
-  .logo img{
-    width: 130px;
-  }
-
-  .nav-btn{
-    background-color: var(--deep-black);
-    color: var(--off-white);
-    padding: 10px 20px;
-    border-radius: 8px;
-  }
 }
 
+/* logo */
+.navbar .logo img {
+  width: 130px;
+}
+
+/* btn */
+.navbar .nav-btn {
+  background-color: var(--deep-black);
+  color: var(--off-white);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+.phonebtn,
+.mobile-btn-li {
+  display: none;
+}
+/* links desktop */
 .navbar .nav-links {
   list-style: none;
   display: flex;
@@ -101,23 +107,22 @@ span{
 
 .navbar .nav-links li a {
   color: var(--deep-black);
-text-decoration: none;
-font-size: 17px;
+  text-decoration: none;
+  font-size: 17px;
 }
-.navbar .nav-links li a:hover {
-text-decoration: underline;
-text-underline-offset: 10px;
-color: var(--orange-color);
-transition: all 0.2s ease;
-}
-/* Main content */
-.main-content {
-flex: 1;
-padding: 20px;
-}
-.hamburger{
+
+/* hamburger hidden desktop */
+.hamburger {
   display: none;
+  cursor: pointer;
+  font-size: 28px;
 }
+
+/* -------------------- MOBILE ---------------------- */
+
+
+
+
 /* -------------------------FOOTER-------------------------- */
 /*  Main Footer Container */
 .footer {

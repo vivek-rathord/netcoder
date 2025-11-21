@@ -9,7 +9,6 @@ import Education from "./pages/Education";
 import Contact from "./pages/Contact";
 import Blogs from "./pages/Blogs";
 import Singlecourse from "./pages/Singlecourse";
-// import Contactform from "./pages/Contactform";
 function App() {
   return (
     <div className="app">

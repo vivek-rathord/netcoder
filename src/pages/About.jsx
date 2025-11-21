@@ -190,10 +190,10 @@ function About() {
           </div>
 
           <div className="arrow left" onClick={prevSlide}>
-          <i className="fa-solid fa-less-than"></i>
+          <i className="fa-solid fa-arrow-down fa-rotate-90"></i>
           </div>
           <div className="arrow right" onClick={nextSlide}>
-           <i className="fa-solid fa-greater-than"></i>
+          <i class="fa-solid fa-arrow-down fa-rotate-270"></i>
           </div>
         </div>
       </div>

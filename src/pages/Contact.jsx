@@ -6,9 +6,9 @@ import Aos from "aos";
 import 'aos/dist/aos.css';
 
 function Contact() {
-
-  // aos initialize here
-  Aos.init();
+ useEffect(() => {
+     Aos.init();
+   }, [])
   const [open, setOpen] = useState(false);
   const form = useRef();
   const navigate = useNavigate();
@@ -209,9 +209,9 @@ function Contact() {
             required
           />
 
-          <label for="course">Select A Course</label>
-          <select name="course" id="course">
-            <option value="" disabled selected>Select a course</option>
+          <label htmlFor="course">Select A Course</label>
+          <select name="course" id="course" defaultValue="">
+            <option value="" disabled >Select a course</option>
             <option value="graphic-design">Graphic Design</option>
             <option value="graphic-design">Web Designing</option>
             <option value="graphic-design">2D/3D Animation</option>
@@ -268,9 +268,9 @@ function Contact() {
             placeholder="Enter Your Email"
             required
           />
-          <label for="course">Select A Course</label>
-          <select name="course" id="course">
-            <option value="" disabled selected>Select a course</option>
+          <label htmlFor="course">Select A Course</label>
+          <select name="course" id="course" defaultValue="">
+            <option value="" disabled >Select a course</option>
             <option value="graphic-design">Graphic Design</option>
             <option value="ui-ux">UI/UX Design</option>
             <option value="web-dev">Web Development</option>
@@ -279,9 +279,9 @@ function Contact() {
             <option value="social-media">Social Media Marketing</option>
           </select>
 
-          <label for="Duration">Duration</label>
-          <select name="Duration" id="Duration">
-            <option value="" disabled selected>45 Days</option>
+          <label htmlFor="Duration">Duration</label>
+          <select name="Duration" id="Duration" defaultValue="">
+            <option value="" disabled>45 Days</option>
             <option value="6 Month">6 Months</option>
             <option value="6 Month">6 Month</option>
             <option value="3 Years">3 Years</option>
@@ -326,8 +326,8 @@ function Contact() {
           />
 
           <label>What Brings You Here Today</label>
-          <select name="course" id="course">
-            <option value="" disabled selected>Needs A Social Manager</option>
+          <select name="course" id="course" defaultValue="">
+            <option value="" disabled >Needs A Social Manager</option>
 
           </select>
 
@@ -335,7 +335,7 @@ function Contact() {
         </form>
       </div>
     </div>
-  );
+  );  
 }
 
 export default Contact;
